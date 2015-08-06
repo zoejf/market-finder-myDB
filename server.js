@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // set up root route to respond with 'hello world'
 app.get('/', function (req, res) {
-  res.send('hello world');
+  res.sendFile(__dirname + '/public/views/index.html');
 });
 
 // listen on port 3000

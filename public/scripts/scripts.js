@@ -1,0 +1,16 @@
+$(function() {
+
+//DEFINE ALL THE VARIABLES/SETUP
+
+
+
+
+//DEFINE FUNCTIONS FOR APIs (MARKET & MAPBOX) 
+
+
+
+
+//EVENT LISTENERS
+
+
+});

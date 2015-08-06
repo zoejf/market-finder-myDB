@@ -1,14 +1,119 @@
-<html>
+<!DOCTYPE html> 
+<html lang="en">
 <head>
   <title>To Market</title>
-  <!-- stylesheet -->
-<link type="text/css" rel="stylesheet" href="styles/style.css">
-
-<!-- client-side javascript -->
-<script type="text/javascript" src="scripts/scripts.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- mapbox css styling and js   -->
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+<!--  google fonts   -->
+  <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+  <!-- customized styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h1 class="courgette">To Market</h1>
+          <p>find a farmer's market anywhere</p>
+        <!-- when vendor sign in is used, welcome a new user -->
+        <!--  <p id="current-user-greet"></p> -->
+        </div>
+        <div class="col-sm-3">
+          <div class="panel panel-default info-panel">
+            <div class="panel-body" >
+            <p id="find">Find a Market</p>
+            <form role="form" id="search-zip" class="form-inline">
+              <div class="form-group">
+                <!-- <label for="zipcode"></label> -->
+                <input input class="form-control" id="zipcode" placeholder="Zip Code (ie. 94118)" minLength="5" required autofocus> 
+              </div>
+              <button type="submit" class="btn btn-success courgette" pull-right>Go!</button>
+            </form>
+            </div>
+          </div>
+        <!--  <p><a class="btn btn-success btn-sm courgette" id="vendor-signup" type="button">Are You A Vendor?</a></p> -->
+        </div>
+      </div>
+    </div>
+  <!-- end of jumbotron -->
+  </div>
 
+
+  <div class="container">
+    <div id="results-section">
+    <div class="row" id="results-row">
+      <div class="col-md-4" id="scroll">
+        <div class="panel panel-default info-panel welcome">
+          <div class="panel-body">
+            <p><span class="courgette" style="font-size:large"> Welcome! </span> </p>
+            
+            <p>Are you visiting a new city or exploring your neighborhood? Type in a zip code above and find the markets closest to that area. Your results will appear here. </p>
+          <br>
+              </div>
+          </div>
+        <ul class="list-group" id="results-list">
+         <!--  results list of markets goes here -->
+        </ul>
+
+        <!-- <div class="market-details">
+            specific market details go here - works with internal API only
+        </div> -->
+      </div>
+      <div class="col-md-8">
+        <div id='map'>
+          <!-- map will go here -->
+        </div>  
+      </div>
+    </div>
+
+    <!-- end of results-section --> 
+    </div>
+    
+
+
+    <footer>
+    <br>
+    <br>
+    <p class="courgette"><strong>To Market &#169 <a href="http://www.zoefoss.com" target="_blank">Zoe J. Foss</a> 2015</strong></p>
+    <p>This product uses information from the USDA’s National Farmers Market Database but is not endorsed or certified by USDA.</p>
+
+
+    </footer>
+  <!-- end of container -->
+  </div>
+
+
+<!-- UNDERSCORE TEMPLATES -->
+    <!-- template for results list will go here-->
+    <script type="text/template" id="results-template">
+      
+    </script>
+
+
+    <!-- template for market details will go here -->
+    <script type="text/template" id="market-details-template">
+   
+    </script>
+
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jquery validation plugin -->
+    <script src="js/jquery.validate.js"></script>
+    <!-- underscore cdn -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- customized script -->
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
 </body>
 </html>
 

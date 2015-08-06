@@ -1,0 +1,56 @@
+body {
+  background-color: #fefbf7;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.courgette {
+  font-family: 'Courgette', cursive;
+}
+
+.display {
+  display: none;
+}
+
+.jumbotron h1 {
+  color: white; 
+}
+
+
+#find {
+  text-align: center;
+  color: black;
+}
+.col-sm-3 {
+  vertical-align: bottom;
+}
+
+.jumbotron {
+  background-image: url("http://i.imgur.com/eDO76Fi.jpg");
+  background-size: 100%;
+  vertical-align: center;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+#results-row {
+  height: 500px;
+}
+
+#scroll {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#map { 
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  width:100%; 
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
