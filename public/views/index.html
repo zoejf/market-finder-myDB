@@ -92,10 +92,19 @@
 
 
 <!-- UNDERSCORE TEMPLATES -->
-    <!-- template for results list will go here-->
-    <script type="text/template" id="results-template">
-      
-    </script>
+
+<!-- template for results list-->
+<script type="text/template" id="results-template">
+  <li class="list-group-item market" id="market-<%= _id %>" data-id="<%= _id %>">
+    <span style="font-weight:700"><%= marketname %></span>
+    <br>
+    Get directions: <a href="<%= website %>" target="_blank">Web Site</a><br>
+    <%= day %> 
+    <br>
+    <%= hours %>
+    <br>
+  </li>
+</script>
 
 
     <!-- template for market details will go here -->
@@ -107,7 +116,7 @@
     <!-- jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- jquery validation plugin -->
-    <script src="js/jquery.validate.js"></script>
+
     <!-- underscore cdn -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
